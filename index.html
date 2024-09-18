@@ -3,44 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Followinthedream - Dexter</title>
+    <title>Top Selling Products</title>
     <style>
         body {
-            margin: 0;
             font-family: Arial, sans-serif;
-            color: white;
-            background-color: black;
-            line-height: 1.6;
-        }
-        header {
-            background-color: magenta;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        header h1 {
             margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
         }
-        nav {
-            margin: 20px 0;
+        h1 {
             text-align: center;
         }
-        nav a {
-            color: magenta;
-            text-decoration: none;
-            margin: 0 15px;
+        .product {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+            margin: 20px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .product h2 {
+            font-size: 24px;
+        }
+        .brands {
+            margin: 10px 0;
+        }
+        .brand {
+            display: inline-block;
+            margin-right: 10px;
             font-weight: bold;
         }
-        nav a:hover {
-            text-decoration: underline;
+        .buy-button {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
         }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px;
+        .buy-button:hover {
+            background-color: #218838;
         }
-        .hero {
-            background-image: url('https://via.placeholder.com/1200x40
+    </style>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'YOUR_TRACKING_ID');
+    </script>
+</head>
+<body>
+
+    <h1>Top Selling Products</h1>
+
+    <div class="product">
+        <h2>1. Phones</h2>
+        <p>Discover the latest smartphones featuring advanced technology, stunning displays, and powerful cameras.</p>
+        <div class="brands">
+            <span class="brand">Apple - iPhone 14</span>
+            <span class="brand">Samsung - Galaxy S23</span>
+            <span class="brand">Google - Pixel 7</span>
+        </div>
+        <a href="https://www.aliexpress.com/item/123456789" class="buy-button">Buy Now</a>
+    </div>
+
+    <div class="product">
+        <h2>2. Clothing and Apparel</h2>
+        <p>Explore a range of stylish clothing and accessories that combine comfort and fashion for any occasion.</p>
+        <div class="brands">
+            <span class="brand">Nike - Air Max</span>
+            <span class="brand">Adidas - Ultraboost</span>
+            <span class="brand">Levi's - 501 Jeans</span>
+        </div>
+        <a href="https://www.aliexpress.com/item/123456789" class="buy-button">Buy Now</a>
+    </div>
+
+    <div class="product">
+        <h2>3. Health and Wellness Products</h2>
+        <p>Stay healthy and active with our top-selling wellness products, designed to boost your well-being.</p>
+        <div class="brands">
+            <span class="brand">Fitbit - Charge 5</span>
+            <span class="brand">Vitamix - E310 Blender</span>
+            <span class="brand">Nature Made - Multivitamins</span>
+        </div>
+        <a href="https://www.aliexpress.com/item/123456789" class="buy-button">Buy Now</a>
+    </div>
+
+    <div class="product">
+        <h2>4. Home Goods</h2>
+        <p>Transform your living space with our selection of essential home goods, perfect for every room.</p>
+        <div class="brands">
+            <span class="brand">Dyson - V15 Vacuum</span>
+            <span class="brand">Instant Pot - Duo 7-in-1</span>
+            <span class="brand">Bissell - CrossWave</span>
+        </div>
+        <a href="https://www.aliexpress.com/item/123456789" class="buy-button">Buy Now</a>
+    </div>
+
+    <div class="product">
+        <h2>5. Gift Cards</h2>
+        <p>Give the gift of choice with popular gift cards from leading retailers, perfect for any occasion.</p>
+        <div class="brands">
+            <span class="brand">Amazon - Gift Card</span>
+            <span class="brand">Target - Gift Card</span>
+            <span class="brand">Starbucks - Gift Card</span>
+        </div>
+        <a href="https://www.giftcardgranny.com" class="buy-button">Buy Now</a>
+    </div>
+
+    <!-- Mailchimp Signup Form -->
+    <div style="text-align:center; margin-top: 20px;">
+        <h2>Subscribe to Our Newsletter</h2>
+        <form action="YOUR_MAILCHIMP_URL" method="post" target="_blank" novalidate>
+            <input type="email" name="EMAIL" placeholder="Enter your email" required>
+            <input type="submit" value="Subscribe">
+        </form>
+    </div>
+
+    <!-- Chatbot Integration (Example with Tidio) -->
+    <script src="//code.tidio.co/YOUR_TIDIO_ID.js" async></script>
+
+</body>
+</html>
